@@ -12,7 +12,10 @@ Minesweeper is a single-player puzzle computer game, originating in the 1960s.
 
 - [ ] Displays a rectangular board
 - [ ] Has top bar with
+  - [ ] max time
+  - [ ] reset button
+  - [ ] time elapsed
 - [ ] Board is made up of rows & columns of squares
 - [ ] Squares have a differentiated "unpressed" and "pressed" style
-- [x] Pressed squares display either the number of neighboring bombs or a bomb
+- [ ] Pressed squares display either the number of neighboring bombs or a bomb
 - [ ] If a bomb is pressed, all bombs on the board appear, but the styling will be differentiated between the "pressed" bomb and all the rest
