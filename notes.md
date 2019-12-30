@@ -25,4 +25,5 @@ Minesweeper is a single-player puzzle computer game, originating in the 1960s.
 - [ ] Plan component tree/structure
 - [ ] What will state look like?
 - [ ] How will state be updated?
+- [ ] What will the dimensions of the board be? (How many rows/columns)
 - [ ] How will the board be randomly set up with bombs?
