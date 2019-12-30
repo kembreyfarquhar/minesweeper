@@ -1,8 +1,14 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
+import TopBar from "./TopBar";
+
 const BoardContainer = () => {
-  return <View style={styles.board}></View>;
+  return (
+    <View style={styles.board}>
+      <TopBar />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
