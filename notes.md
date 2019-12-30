@@ -27,13 +27,15 @@ Minesweeper is a single-player puzzle computer game, originating in the 1960s.
 - [ ] How will state be updated?
 - [ ] What will the dimensions of the board be? (How many rows/columns)
 - [ ] How will the board be randomly set up with bombs?
+- [ ] How to calculate the number of adjacent bombs?
+- [ ] How to activate all adjacent "non-bombs" to a pressed "0"
 
 ##### Brainstorming
 
 - Loop to create rows, nested loop to create cells
 - Set this up as the initial state
 - cell prop bomb={false}
-- Randomly generate cells to attribute bomb={true} to
+- Randomly generate cells to attribute bomb={true}
 - Cells have className of "pressed" if pressed
 - onPress if bomb: reveal all bombs & losing signifier
 - onPress if NOT bomb: add class "pressed" to reveal styling & number
