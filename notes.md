@@ -19,3 +19,10 @@ Minesweeper is a single-player puzzle computer game, originating in the 1960s.
 - [ ] Squares have a differentiated "unpressed" and "pressed" style
 - [ ] Pressed squares display either the number of neighboring bombs or a bomb
 - [ ] If a bomb is pressed, all bombs on the board appear, but the styling will be differentiated between the "pressed" bomb and all the rest
+
+#### Logic
+
+- [ ] Plan component tree/structure
+- [ ] What will state look like?
+- [ ] How will state be updated?
+- [ ] How will the board be randomly set up with bombs?
