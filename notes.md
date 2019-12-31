@@ -39,3 +39,5 @@ Minesweeper is a single-player puzzle computer game, originating in the 1960s.
 - Cells have className of "pressed" if pressed
 - onPress if bomb: reveal all bombs & losing signifier
 - onPress if NOT bomb: add class "pressed" to reveal styling & number
+
+* CellsContainer (loop of 10-20ish) -render-> Row (loop of 5-10ish) -render-> Cell
