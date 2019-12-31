@@ -1,12 +1,12 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const Cells = () => {
+const Row = () => {
   return (
     <View>
-      <Text>CELLS</Text>
+      <Text>ROW</Text>
     </View>
   );
 };
 
-export default Cells;
+export default Row;
