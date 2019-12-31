@@ -20,7 +20,8 @@ const TopBar = () => {
 const styles = StyleSheet.create({
   topBar: {
     flexDirection: "row",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    padding: 20
   }
 });
 
