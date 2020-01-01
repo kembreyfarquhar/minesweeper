@@ -9,7 +9,7 @@ const CellsContainer = () => {
   return (
     <View>
       {rowArr.map((row, index) => (
-        <Row key={index} />
+        <Row key={index} index={index} />
       ))}
     </View>
   );

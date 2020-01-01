@@ -16,8 +16,7 @@ const BoardContainer = () => {
 const styles = StyleSheet.create({
   board: {
     backgroundColor: "grey",
-    height: "70%",
-    width: "80%"
+    padding: 10
   }
 });
 

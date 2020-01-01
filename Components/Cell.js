@@ -1,12 +1,20 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const Cell = () => {
+const Cell = props => {
   return (
-    <View>
-      <Text>X</Text>
+    <View style={styles.cell}>
+      <Text>{props.index}</Text>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  cell: {
+    padding: 10,
+    borderColor: "black",
+    borderWidth: 1
+  }
+});
 
 export default Cell;
