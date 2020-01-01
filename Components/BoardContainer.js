@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 import TopBar from "./TopBar";
 import CellsContainer from "./CellsContainer";
 
 const BoardContainer = () => {
+  const [newGame, setNewGame] = useState(true);
+
   return (
     <View style={styles.board}>
-      <TopBar />
-      <CellsContainer />
+      <TopBar newGame={newGame} setNewGame={setNewGame} />
+      <CellsContainer newGame={newGame} setNewGame={setNewGame} />
     </View>
   );
 };
