@@ -1,15 +1,15 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, TouchableHighlight } from "react-native";
 
-const TopBar = () => {
+const TopBar = ({ newGame, setNewGame }) => {
   return (
     <View style={styles.topBar}>
       <View>
         <Text>MAX-TIME</Text>
       </View>
-      <View>
+      <TouchableHighlight style={styles.reset} onPress={() => setNewGame(true)}>
         <Text>RESET</Text>
-      </View>
+      </TouchableHighlight>
       <View>
         <Text>TIMER</Text>
       </View>
@@ -21,7 +21,14 @@ const styles = StyleSheet.create({
   topBar: {
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: 20
+    padding: 10
+  },
+  reset: {
+    borderWidth: 1,
+    borderColor: "black",
+    backgroundColor: "white",
+    paddingVertical: 10,
+    paddingHorizontal: 15
   }
 });
 
