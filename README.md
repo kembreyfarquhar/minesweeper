@@ -1,3 +1,1 @@
-Project to create minesweeper with react-native. 
-
-
+Project to create minesweeper with react-native.
