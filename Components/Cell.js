@@ -1,19 +1,37 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React, { useState, useEffect } from "react";
+import { StyleSheet, Text, View, TouchableHighlight } from "react-native";
 
-const Cell = props => {
+const Cell = ({ index, newGame, setNewGame }) => {
+  const [pressed, setPressed] = useState(false);
+
+  useEffect(() => {
+    newGame && setPressed(false);
+  }, [newGame]);
+
   return (
-    <View style={styles.cell}>
-      <Text>{props.index}</Text>
-    </View>
+    <TouchableHighlight
+      style={pressed ? [styles.cell, styles.pressed] : [styles.cell]}
+      onPress={() => {
+        setPressed(true);
+        newGame && setNewGame(false);
+      }}
+    >
+      <Text>{pressed && index}</Text>
+    </TouchableHighlight>
   );
 };
 
 const styles = StyleSheet.create({
   cell: {
-    padding: 10,
+    width: 30,
+    height: 30,
     borderColor: "black",
-    borderWidth: 1
+    borderWidth: 1,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  pressed: {
+    backgroundColor: "white"
   }
 });
 
